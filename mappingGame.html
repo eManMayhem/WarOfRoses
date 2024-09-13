@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Scripts/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>War of Roses</title>
+</head>
+<body>
+    <section id="loadingScreen" class="hidden">
+        <section class="loading-content">
+            <h1>Loading</h1><div id="loadingDots" class="loading-dots"></div>
+        </section>
+    </section>
+
+    <section id="titleScreen">
+        <section id="titleScreen2">
+            <h1 id="title">War of Roses <br> Test Build</h1>
+            <input type="button" id="startButton" value="Begin">
+        </section>
+
+        <section id="version">
+            <p>Version: Pre-Alpha-1.31</p>
+        </section>
+
+        <section id="sidebar">
+            <button id="backButton" class="back-button">&#9664; Back to Title</button>
+            <h2>Select Your Country</h2>
+            <section id="flagAndChartContainer">
+                <section id="flagPlaceholder"></section>
+                <canvas id="pieChart"></canvas>
+            </section>
+
+        <section id="dropdownAndStats">
+            <section id="countryDropdown">
+                <select id="countrySelect">
+                    <option value="choose">Choose</option>
+                    <option value="germany">Germany</option>
+                    <option value="poland">Poland</option>
+                    <!-- <option value="italy">Italy</option> -->
+                </select>
+            </section>
+
+            <section id="countryStats">
+                <p id="heading">Statistics:</p>
+                <p id="army">Manpower</p>
+                <p id="tanks">Tanks</p>
+                <p id="air">Planes</p>
+                <p id="spy">Spies</p>
+                <p id="happy">Happiness</p>
+            </section>
+        </section>
+            <input type="button" id="startGameButton" class="start-button" value="Start Game">
+        </section>
+
+        <section id="ds">
+            <h2>Description</h2>
+            <p id="description">No country chosen.</p>
+        </section>
+
+        <section id="settingsButton">
+            <button id="settingsBtn"><span>&#9881;</span></button>
+        </section>
+
+        <section id="settingsMenu">
+            <h2>Settings</h2>
+            <h3>Map Modes</h3>
+            <section id="mapShowcase"></section>
+            <section id="mapDropdown">
+                <select id="mapSelect">
+                    <option value="old">Old Mode</option>
+                    <option value="dark">Dark Mode</option>
+                    <option value="light">Light Mode</option>
+                </select>
+            </section>
+            <h3>Audio</h3>
+            <h4>Click SFX</h4>
+            <div class="slider-container">
+                <input type="range" id="clickSfxVolume" min="0" max="10" value="10" class="slider">
+                <span id="slider-value" class="slider-value">10</span>
+            </div>
+            <h4>Music</h4>
+            <h3>Extras</h3>
+
+            <p>Note: More settings coming soon! Maybe.</p>
+        </section>
+
+        <img id="titleScreenImg" src="OldMode/titleScreen.png" alt="Title Screen Map">
+
+        <section id="flagGame" hidden></section>
+
+        <section id="sidebar2">
+            <canvas id="pieChart2"></canvas>
+        </section>
+    </section>
+
+    <section id="popup" class="popup">
+        <section class="popup-header">
+            <span class="popup-title"></span>
+        </section>
+        <section class="popup-content">
+            <!-- Content of the decision window goes here -->
+            <p id="decisionText"></p>
+        </section>
+        <section class="popup-buttons"></section> <!-- Add this section for buttons -->
+    </section>
+
+    <input type="button"value="Next Turn →" id="playButton" onclick="togglePopup()">
+
+    <audio id="clickSound1" src="audio/click_default.wav"></audio>
+    <audio id="clickSound2" src="audio/click_window_close.wav"></audio>
+    <audio id="clickSound3" src="audio/click_big.wav"></audio>
+    <audio id="clickSound4" src="audio/click_write.wav"></audio>
+    <audio id="clickSound5" src="audio/click_settings.wav"></audio>
+    <audio id="clickSound6" src="audio/drums.wav"></audio>
+    <audio id="clickSound7" src="audio/bong.wav"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Scripts/countryStats.js"></script>
+    <script src="Scripts/pieChart.js"></script>
+    <script src="Scripts/sfxHandling.js"></script>
+    <script src="Scripts/decsions.js"></script>
+    <script src="Scripts/popup.js"></script>
+    <script src="Scripts/mapHandling.js"></script>
+    <script src="Scripts/javascript.js"></script>
+</body>
+</html>
