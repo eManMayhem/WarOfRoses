@@ -584,7 +584,7 @@ table {
   transform: translate(-50%, -50%);
   width: 500px;
   height: fit-content;
-  background-image: url('background.jpg');
+  background-image: url('Graphics/Backgrounds/background.jpg');
   background-size: cover; /* Ensure the image covers the entire popup */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the background image from repeating */

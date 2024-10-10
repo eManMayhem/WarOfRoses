@@ -21,9 +21,9 @@ const changeMap = function() {
     // Construct the map image URL based on the selected map mode and country
     let mapImageURL;
     if (selectedCountry === "choose") {
-        mapImageURL = `${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/titleScreen.png`;
+        mapImageURL = `Graphics/MapModes/${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/titleScreen.png`;
     } else {
-        mapImageURL = `${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/${selectedCountry.charAt(0).toUpperCase() + selectedCountry.slice(1)}/1.png`;
+        mapImageURL = `Graphics/MapModes/${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/${selectedCountry.charAt(0).toUpperCase() + selectedCountry.slice(1)}/1.png`;
     }
 
     // Update the map image source
