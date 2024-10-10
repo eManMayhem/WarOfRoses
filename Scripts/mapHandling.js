@@ -23,7 +23,7 @@ const changeMap = function() {
     if (selectedCountry === "choose") {
         mapImageURL = `Graphics/MapModes/${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/titleScreen.png`;
     } else {
-        mapImageURL = `Graphics/MapModes/${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/${selectedCountry.charAt(0).toUpperCase() + selectedCountry.slice(1)}/1.png`;
+        mapImageURL = `Graphics/MapModes/${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/${selectedCountry.charAt(0).toUpperCase()}/1.png`;
     }
 
     // Update the map image source

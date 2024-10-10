@@ -87,7 +87,7 @@ const updateCountryDetails = function() {
 
     // Construct the flag image URL based on the country name and leading ideology
     const flagImageURL = `${selectedCountry.charAt(0).toUpperCase() + selectedCountry.slice(1)}_${rulingIdeology}.png`;
-    flagPlaceholder.style.backgroundImage = `url(flags/${flagImageURL})`;
+    flagPlaceholder.style.backgroundImage = `url(Graphics/flags/${flagImageURL})`;
     
     const descriptions = {
         choose: "No country chosen.",
