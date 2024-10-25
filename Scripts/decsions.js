@@ -21,7 +21,7 @@ const decisions = {
                         decisions.germany.germanyEvent1.clickedButton2 = false;
                         decisions.germany.germanyEvent1.clickedButton3 = false;
         
-                        mapImageURL = `${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/${"germany".charAt(0).toUpperCase() + "germany".slice(1)}/2.png`;
+                        mapImageURL = `./${selectedMap.charAt(0).toUpperCase() + selectedMap.slice(1)}Mode/${"germany".charAt(0).toUpperCase() + "germany".slice(1)}/2.png`;
                         $("titleScreenImg").src = mapImageURL;
                         
 
